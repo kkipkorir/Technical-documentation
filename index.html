@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>CSS documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" ref="#Selectors_and_Declarations">Selectors and Declarations</a></li>
+        <li><a class="nav-link" href="#Box_Model">Box Model</a></li>
+        <li><a class="nav-link" href="#Display">Display</a></li>
+        <li><a class="nav-link" href="#Display">Display</a></li>
+        <li><a class="nav-link" href="#Positioning">Positioning</a></li>
+        <li><a class="nav-link" href="#Positioning">Positioning</a></li>
+        <li><a class="nav-link" href="#Typography">Typography</a></li>
+        <li><a class="nav-link" href="#Colors_and_Background">Colors and Background</a></li>
+        <li><a class="nav-link" href="#References">References</a></li>
+      </ul>
+    </nav>
+    
+    
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML.</p> 
+        <ul>
+      <li>It controls the layout, colors, fonts, and other visual aspects of web pages.</li>
+      <li>CSS rules consist of a selector and a declaration block. </li>
+      <code >
+     selector {
+  property: value;
+}
+      </code>
+      </ul>
+      </section>
+
+      <section class="main-section" id="Selectors_and_Declarations">
+        <header>Selectors and Declarations</header>
+        <p>CSS rules consist of a selector and a declaration block. The selector targets HTML elements, and the declaration block contains property-value pairs.Common types include:</p>
+        <ul>
+<li>Element Selector: <br>
+  <code>HTMLElement { ... }</code>
+</li>
+<li>Class selector: <br>
+  <code>.className { ... }</code>
+</li>
+<li>ID Selector: <br>
+  <code>#idName { ... }</code>
+</li>
+<li>Attribute Selector: <br>
+  <code>element[attribute="value"] { ... }</code>
+</li>
+<li>Descendant Selector: <br>
+  <code>parent descendant { ... }</code>
+</li>
+<div>
+      <span>Declaration box:</span>
+      <span> contains property-value pairs that define styles for the selected elements.</span>
+      <br/>
+      <code>
+        h1 {
+      <br/>
+  color: blue;<br/>
+  font-size: 24px;
+}
+      </code>
+    </div>
+    </ul>
+        
+      </section>
+
+      <section class="main-section" id="Box_Model">
+        <header>Box Model</header>
+        <h3>Content, Padding, Border, Margin</h3>
+        <p>The box model defines how elements are rendered. It includes content, padding, border, and margin.</p>
+        <code>.box {
+          <br>
+  width: 200px;<br>
+  padding: 20px;<br>
+  border: 2px solid black;<br>
+  margin: 10px;<br>
+}
+</code>
+      </section>
+
+      <section class="main-section" id="Display">
+        <header>Display</header>
+        <p>The display property determines how an element is rendered.</p>
+        <code>
+          .block {
+  display: block;//displays elements in block format
+}
+<br>
+<br>
+.inline {
+  display: inline;// displays elements in one line
+}
+<br>
+<br>
+.flex {
+  display: flex;//makes a parent element as a container and the children as container objects
+}<br>
+        </code>
+      </section>
+
+      <section class="main-section" id="Positioning">
+        <header>Positioning</header>
+        <p>Elements can be positioned using position property values.There are four values</p>
+        <ul>
+          <li>Static: This is the default value
+            <br>
+            <code>div{
+              <br>
+              position:static;<br>
+              }
+            </code>
+          </li>
+          <li>Absolute: Removes an element from normal document flow and postions it based on values of top,left,right and bottom eg:
+            <br>
+            <code>div{
+              <br>
+              position:absolute;<br>
+              top:15px;left:180px;<br>
+              }
+            </code>
+          </li>
+          <li>Relative: Element is positioned according to the normal flow of document but the top,left,right and bottom are active eg: 
+            <br>
+            <code>div{
+              <br>
+              position:relative;<br>
+              top:15px;left:180px;<br>
+              }
+            </code>
+          </li>
+        </ul>
+        
+        <code></code>
+      </section>
+      <section class="main-section" id="Typography">
+        <header>Typography</header>
+        <div>
+          <h3>Font properties</h3>
+          <p>Define font properties for text.</p>
+          <code>
+            body {<br>
+  font-family: 'Arial', sans-serif;<br>
+  font-size: 16px;<br>
+  font-weight: bold;<br>
+  font-style: italic;<br>
+}
+
+          </code>
+        </div>
+        <div>
+          <h3>Text properties</h3>
+          <p>Style text with various properties.</p>
+          <code>
+           p {<br>
+  color: #333;<br>
+  text-align: center;<br>
+  text-decoration: underline;<br>
+  letter-spacing: 2px;<br>
+}
+          </code>
+        </div>
+      </section>
+      
+       <section class="main-section" id="Colors_and_Background">
+        <header>Colors and Background</header>
+        <div>
+       <h3>Color Representation</h3>
+       <p>Define colors using different formats</p>
+       <code>
+         /* Hexadecimal */ <br>
+.element1 {
+  color: #ff0000;
+}
+<br>
+/* RGB */<br>
+.element2 {
+  background-color: rgb(255, 0, 0);
+}
+<br>
+/* HSL */<br>
+.element3 {
+  border-color: hsl(0, 100%, 50%); }
+       </code>
+        </div>
+        <div>
+       <h3>Background Properties</h3>
+       <p>Style element backgrounds.</p>
+       <code>
+         .section {<br>
+  background-color: #f0f0f0;<br>
+  background-image: url('background.jpg');<br>
+  background-repeat: no-repeat;<br>
+  background-position: center;<br>
+}
+       </code>
+        </div>
+      </section>
+      <section class="main-section" id="References">
+        <header>References</header>
+        <p>To learn more on CSS visit <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">MDN</a></p>
+      </section>
+    </main>
+  </body>
+</html>
